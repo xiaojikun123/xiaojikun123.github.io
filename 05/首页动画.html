@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-size: 0.16rem;
+            color:white;
+        }
+
+        [v-cloak] {
+            display: none;
+        }
+        .head{
+            line-height:0.6rem;
+            text-align: center;
+            background:black;
+        }
+        .right{
+            position: absolute;
+            top: 0;
+            right:0.40rem;
+        }
+        .bioa{
+             line-height:0.5rem;
+             text-align: center;
+             position: relative;
+             cursor: pointer;
+        }
+        .firsts{
+            width: 100%;
+            position: absolute;
+            top:0.6rem;
+            left: 0;
+            
+            background:black;
+            z-index: 2;
+        }
+        .strees{
+            width: 100%;
+            position: absolute;
+            top:0.6rem;
+            left: 0;
+            background: #000;
+        }
+        .no1-enter,
+        .no1-leave-to {
+            opacity: 0;
+            top: 0.12rem !important;
+        }
+
+        .no1-enter-active,
+        .no1-leave-active {
+            transition: all .3s;
+        }
+
+        .no2-enter,
+        .no2-leave-to {
+            opacity: 0;
+            left: -0.12rem !important;
+        }
+
+        .no2-enter-active,
+        .no2-leave-active {
+            transition: all .3s;
+        }
+
+        .no3-enter,
+        .no3-leave-to {
+            opacity: 0;
+            top: 0.12rem !important;
+        }
+
+        .no3-enter-active,
+        .no3-leave-active {
+            transition: all .3s;
+        }
+    </style>
+    
+</head>
+
+<body>
+    <div id="box" v-cloak="">
+        <lee></lee>
+    </div>
+    <template id="lee">
+        <div style="position: relative;">
+            <div class="head" @click="one">
+                首页
+            </div>
+            <transition :name="first">
+                <div class="firsts" 
+                    v-show="first_t">
+                    <div v-for="i in arr" class="bioa">
+                        {{i.title}}
+                         <div class="right" v-if="i.arr.length"
+                            @click="two(i.arr)">>
+                                
+                            </div>
+                    </div>
+                </div>
+            </transition>
+            <transition name="stree">
+                <div class ="strees" v-show="strees_t">
+                    <div style="line-height:0.5rem;text-align: center;position: relative;" @click="stree">
+                        返回上一级
+                    </div>
+                    <div v-for="i in kk_arr"
+                        style="line-height:0.5rem;text-align: center;position: relative;">
+                        {{i}}
+                    </div>
+                </div>
+            </transition>
+        </div>
+    </template>
+    <script src="js/vue.js"></script>
+    <script src="js/vue-router.js"></script>
+    <script>
+        Vue.component('lee', {
+            template: '#lee',
+            methods: {
+                one() {
+
+                    if (this.strees_t) {
+                        this.strees_t = false
+                    } else {
+                        this.first = 'no1'
+                        this.first_t = !this.first_t
+                    }
+                },
+                two(arr) {
+                    this.first = 'no2'
+                    this.first_t = false
+                    this.kk_arr = arr
+
+                    setTimeout(() => {
+                        this.strees_t = true
+                    }, 200)
+                },
+                stree() {
+                    this.strees_t = false
+                    this.first_t = true
+                }
+            },
+            data() {
+                return {
+                    first_t: false,
+                    strees_t: false,
+                    first: 'no1',
+                    kk_arr: '',
+                    arr: [
+                    {title:'首页',arr:[]},
+                    {title:'软件产品',arr:[]},
+                    {title:'相关服务',arr:['相关服务']},
+                    {title:'新闻动态',arr:['新闻动态','公司介绍']},
+                    {title:'公司介绍',arr:['']},
+                    {title:'工作机会',arr:[]},
+                    {title:'联系我们',arr:[]},
+                    ]
+                }
+            }
+        })
+        new Vue({
+            el: '#box'
+        })
+         window.onload = function () {
+            document.documentElement.style.fontSize = document.documentElement.clientWidth / 640 * 100 + 'px';
+        }
+        window.onresize = function () {
+            document.documentElement.style.fontSize = document.documentElement.clientWidth / 640 * 100 + 'px';
+        }
+    </script>
+</body>
+
+</html>
