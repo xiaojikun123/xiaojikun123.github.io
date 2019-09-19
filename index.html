@@ -1,328 +1,629 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Beleme - Free Bootstrap 4 Resume / Personal Portfolio Template</title>
+        <meta name="description" content="Beleme is a beautiful Bootstrap 4 template for resume, CV or personal portfolio." /> 
 
-		<title>Constructive HTML Template</title>
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">
-		<!-- Google web font "Open Sans" -->
-		<link rel="stylesheet" href="css/fontawesome-all.min.css">
-		<link rel="stylesheet" href="css/bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="css/magnific-popup.css" />
-		<link rel="stylesheet" type="text/css" href="slick/slick.css" />
-		<link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
-		<link rel="stylesheet" href="css/tooplate-style.css">
+        <!--Google fonts-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico|Inconsolata:400,700">
 
-		<script>
-			var renderPage = true;
+        <!--vendors styles-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
 
-			if (navigator.userAgent.indexOf('MSIE') !== -1 ||
-				navigator.appVersion.indexOf('Trident/') > 0) {
-				alert("Please view this in a modern browser such as Chrome or Microsoft Edge.");
-				renderPage = false;
-			}
-		</script>
-	</head>
+        <!-- Bootstrap CSS / Color Scheme -->
+        <link rel="stylesheet" href="css/default.css" id="theme-color">
+    </head>
+    <body data-spy="scroll" data-target="#beleme-navbar" data-offset="0">
 
-	<body>
-		<!-- Loader -->
-		<div id="loader-wrapper">
-			<div id="loader"></div>
-			<div class="loader-section section-left"></div>
-			<div class="loader-section section-right"></div>
-		</div>
+        <!--hero header-->
+        <section class="bg-hero py-7 py-md-0" id="home" style="background-image: url(img/parallex.jpg)">
+            <div class="container">
+                <div class="row vh-md-100">
+                    <div class="col-md-8 mx-auto my-auto text-white text-center">
+                        <img src="img/user.jpg" class="img-fluid rounded-circle img-profile" alt="User" />
+                        <h1 class="my-4">肖吉坤</h1>
+                        <p class="lead mb-5 font-weight-bold">
+								<!--你坚持的总有一天会反过来拥抱你-->
+                            <span class="typist" data-typist=""> </span>
+                        </p>
+                        <a href="#about" class="btn btn-primary d-inline-flex flex-row align-items-center page-scroll">
+                           下滑
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-		<!-- Page Content -->
-		<div class="container-fluid tm-main">
-			<div class="row tm-main-row">
+        <!--navigation-->
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary sticky-top sticky-navigation" id="beleme-navbar">
+            <a class="navbar-brand d-md-none" href="index.html">
+                Beleme
+            </a>
+            <button class="navbar-toggler navbar-toggler-right text-white" type="button" data-toggle="collapse" 
+                    data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span data-feather="grid"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#home">个人博客主页<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#experience">我的项目</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#education">详情</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#skills">技巧</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#services">服务</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#testimonials">奖项</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#portfolio">我的投资组合</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#contact">联系</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
 
-				<!-- Sidebar -->
-				<div id="tmSideBar" class="col-xl-3 col-lg-4 col-md-12 col-sm-12 sidebar">
+        
 
-					<button id="tmMainNavToggle" class="menu-icon">&#9776;</button>
+        <!--work experience-->
+        <section class="py-7 bg-primary" id="experience">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 mx-auto">
+                        <h2 class="text-white text-center">项目展示</h2>
+                        <div class="divider bg-white mx-auto"></div>
+                        <div class="card mt-5">
+                            <div class="card-body">
+                                <div class="timeline px-sm-5">
+                                    <div class="root">项目分类</div>
+                                    <div class="root">
+                                        <div class="date">2019 &mdash; 2020</div>
+                                        <div class="dot"></div>
+                                        <div class="event">
+                                            
+                                            <div class="text-muted small-xl">
+                                               
+                                              <p>
+                                              	
+                                              	<h4 class="tm-text-shadow">
+                                              		<a href="05/轮播图.html">01 轮播图</a>
+                                              	</h4>
+                                             
+                                              	<h4 class="tm-text-shadow">
+                                              		<a href="05/首页动画.html">02 导航</a>
+                                              	</h4>
+                                              	<h4 class="tm-text-shadow">
+                                              		<a href="02/index.html">03 商品之城</a>
+                                              	</h4>
+                                              	<h4 class="tm-text-shadow">
+                                              		<a href="03/index.html">04 牛记生鲜</a>
+                                              	</h4>
+                                              	<h4 class="tm-text-shadow">
+                                              		<a href="06/index.html">05 锄禾园林</a>
+                                              	</h4>
+                                              	<h4 class="tm-text-shadow">
+                                              		<a href="01/index.html">06 QQ音乐</a>
+                                              	</h4>
+                                              	<h4 class="tm-text-shadow">
+                                              		<a href="08/index.html">07 皮皮虾</a>
+                                              	</h4>
+                                              </p>
+                                               
+                                            </div>
+                                            <div class="content mt-4 px-0">
+                                               
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="root">
+                                        <div class="date">2020 &mdash; 2021</div>
+                                        <div class="dot"></div>
+                                        <div class="event">
+                                            <h5 class="mb-2"></h5>
+                                            <div class="text-muted small-xl">
+                                                <span></span>
+                                                <span class="bull"></span>
+                                                <span></span>
+                                            </div>
+                                            <div class="content mt-4 px-0">
+                                               
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="root">
+                                        <div class="date">2021 &mdash; 2022</div>
+                                        <div class="dot"></div>
+                                        <div class="event">
+                                            <h5 class="mb-2"></h5>
+                                            <div class="text-muted small-xl">
+                                                <span></span>
+                                                <span class="bull"></span>
+                                                <span></span>
+                                            </div>
+                                            <div class="content mt-4 px-0">
+                                                
+                                                <ul>
+                                                   <!-- <li></li>
+                                                    <li></li> -->
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="tlinks">Collect from <a href="http://www.cssmoban.com/"  title="网站模板">网站模板</a></div>
 
-					<div class="inner">
-						<nav id="tmMainNav" class="tm-main-nav">
-							<ul>
-								<li>
-									<a hrspanef="#intro" id="tmNavLink1" class="scrolly active" data-bg-img="constructive_bg_01.jpg" data-page="#tm-section-1">
-										<!-- <i class="fas fa-home tm-nav-fa-icon"></i> -->
-										KK 个人博客</span>
+        <!--education section-->
+        <section class="py-7 bg-light" id="education">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7 mx-auto text-center">
+                        <h2>详情</h2>
+                        <div class="divider bg-primary mx-auto"></div>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <span class="text-muted font-weight-bold">2019 &mdash; 2020</span>
+                                <h5>Master in Computer Science</h5>
+                                <p class="text-muted small-xl">Oxford University</p>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. 
+                                    Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4  mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <span class="text-muted font-weight-bold">2021 &mdash; 2021</span>
+                                <h5>Bachelor in Computer Science</h5>
+                                <p class="text-muted small-xl">London Scool of Science & Technology</p>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. 
+                                    Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <span class="text-muted font-weight-bold">2020 &mdash; 2022</span>
+                                <h5>Diploma in Applied Sciences</h5>
+                                <p class="text-muted small-xl">University of Saarland</p>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. 
+                                    Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-									</a>
-								</li>
-								<li>
-									<a href="#products" id="tmNavLink2" class="scrolly" data-bg-img="constructive_bg_02.jpg" data-page="#tm-section-2"
-									 data-page-type="carousel">
-										<i class="fas fa-map tm-nav-fa-icon"></i>
-										<span>个人相册</span>
-									</a>
-								</li>
-								<li>
-									<a href="#company" class="scrolly" data-bg-img="constructive_bg_03.jpg" data-page="#tm-section-3">
-										<i class="fas fa-users tm-nav-fa-icon"></i>
-										<span>项目案例</span>
-									</a>
-								</li>
+        <!--skills section-->
+        <section class="py-7" id="skills">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7 mx-auto text-center">
+                        <h2>我的技巧</h2>
+                        <div class="divider bg-primary mx-auto"></div>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-md-6 px-5">
+                        <h5> 设计图</h5>
+                        <div class="skill">
+                            <div class="skill-name"> 插图画家 <span class="badge badge-primary float-right">95%</span></div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-name">上线<span class="badge badge-primary float-right">85%</span></div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-name">线框图 <span class="badge badge-primary float-right">70%</span></div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-name">信息图 <span class="badge badge-primary float-right">95%</span></div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-name">卡通片绘制 <span class="badge badge-primary float-right">65%</span></div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 px-5">
+                        <h5>开发技能</h5>
+                        <div class="skill">
+                            <div class="skill-name">有角的；生硬的，笨拙的；瘦削的<span class="badge badge-primary float-right">90%</span></div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-name">认知的 <span class="badge badge-primary float-right">80%</span></div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-name">服务器端编程语言<span class="badge badge-primary float-right">70%</span></div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-name">HTML 5 / CSS3 <span class="badge badge-primary float-right">99%</span></div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 99%" aria-valuenow="99" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-name">博客系统<span class="badge badge-primary float-right">60%</span></div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-							</ul>
-						</nav>
-					</div>
-				</div>
+        <!--services section-->
+        <section class="py-7 bg-primary" id="services">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7 mx-auto text-center">
+                        <h2 class="text-white">我的服务</h2>
+                        <div class="divider bg-white mx-auto"></div>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <div class="icon-box">
+                                    <div class="icon-box-inner small text-primary">
+                                        <span data-feather="crop" width="30" height="30"></span>
+                                    </div>
+                                </div>
+                                <h5 class="my-3">Web 网页设计</h5>
+                                <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imper per tem por legere me doming.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <div class="icon-box">
+                                    <div class="icon-box-inner small text-primary">
+                                        <span data-feather="monitor" width="30" height="30"></span>
+                                    </div>
+                                </div>
+                                <h5 class="my-3">Web 开发</h5>
+                                <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imper per tem por legere me doming.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <div class="icon-box">
+                                    <div class="icon-box-inner small text-primary">
+                                        <span data-feather="briefcase" width="30" height="30"></span>
+                                    </div>
+                                </div>
+                                <h5 class="my-3"> 品牌化，品牌术</h5>
+                                <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imper per tem por legere me doming.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <div class="icon-box">
+                                    <div class="icon-box-inner small text-primary">
+                                        <span data-feather="smartphone" width="30" height="30"></span>
+                                    </div>
+                                </div>
+                                <h5 class="my-3">移动应用开发</h5>
+                                <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imper per tem por legere me doming.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <div class="icon-box">
+                                    <div class="icon-box-inner small text-primary">
+                                        <span data-feather="message-square" width="30" height="30"></span>
+                                    </div>
+                                </div>
+                                <h5 class="my-3">社会化媒体</h5>
+                                <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imper per tem por legere me doming.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <div class="icon-box">
+                                    <div class="icon-box-inner small text-primary">
+                                        <span data-feather="headphones" width="30" height="30"></span>
+                                    </div>
+                                </div>
+                                <h5 class="my-3">管理咨询</h5>
+                                <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imper per tem por legere me doming.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-				<div class="col-xl-9 col-lg-8 col-md-12 col-sm-12 tm-content">
+        <!--testimonials section-->
+        <section class="py-7 bg-light" id="testimonials">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 mx-auto text-center">
+                        <h2 class="text-capitalize">Testimonials</h2>
+                        <div class="divider bg-primary mx-auto"></div>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-md-8 mx-auto slick-users">
+                        <div class="media text-center">
+                            <img src="img/client-1.jpg" class="img-fluid img-profile rounded-circle d-block mx-auto" alt="Client 1"/>
+                            <div class="media-body mt-4">
+                                <blockquote class="blockquote">
+                                    <p class="mb-0">Praesent vulputate dolor velit, in condimentum odio pellentesin condimentum odio pellentesque libero. Nulla facilisi. Ut enim ad minim veniam, quis nostrud exercitation. Nulla facilisi.</p>
+                                    <footer class="blockquote-footer mt-3"><b>Ryan Siddle</b> <br/><small>Manager at Google</small></footer>
+                                </blockquote>
+                            </div>
+                        </div>
+                        <div class="media text-center">
+                            <img src="img/client-2.jpg" class="img-fluid img-profile rounded-circle d-block mx-auto" alt="Client 2"/>
+                            <div class="media-body mt-4">
+                                <blockquote class="blockquote">
+                                    <p class="mb-0">Praesent vulputate dolor velit, in condimentum odio pellentesin condimentum odio pellentesque libero. Nulla facilisi. Ut enim ad minim veniam, quis nostrud exercitation. Nulla facilisi.</p>
+                                    <footer class="blockquote-footer mt-3"><b>Ameli Mao</b> <br/> <small>Head of Design at Facebook</small></footer>
+                                </blockquote>
+                            </div>
+                        </div>
+                        <div class="media text-center">
+                            <img src="img/client-3.jpg" class="img-fluid img-profile rounded-circle d-block mx-auto" alt="Client 3"/>
+                            <div class="media-body mt-4">
+                                <blockquote class="blockquote">
+                                    <p class="mb-0">Praesent vulputate dolor velit, in condimentum odio pellentesin condimentum odio pellentesque libero. Nulla facilisi. Ut enim ad minim veniam, quis nostrud exercitation. Nulla facilisi.</p>
+                                    <footer class="blockquote-footer mt-3"><b>Kathrine Jones</b> <br/> <small>Senior Developer at GitHub</small></footer>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-					<!-- section 1 -->
-					<section id="tm-section-1" class="tm-section">
-						<div class="ml-auto">
-							<header class="mb-4">
-								<p class="mb-5 tm-font-big">
+        
+        <!--portfolio section-->
+        <section class="py-7" id="portfolio">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 mx-auto text-center">
+                        <h2>合伙人</h2>
+                        <div class="divider bg-primary mx-auto"></div>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-sm-10 mx-auto">
+                        <div class="slick-slider">
+                            <div class="card mr-3">
+                                <img class="card-img-top rounded" src="img/work-1.jpg" alt="Work 1">
+                                <div class="card-body px-0">
+                                    <h5 class="card-title">Logo Design for Kroplet</h5>
+                                    <p class="card-text text-muted">Branding</p>
+                                </div>
+                            </div>
+                            <div class="card mr-3">
+                                <img class="card-img-top rounded" src="img/work-2.jpg" alt="Work 2">
+                                <div class="card-body px-0">
+                                    <h5 class="card-title">Website for Twitter</h5>
+                                    <p class="card-text text-muted">Web Design</p>
+                                </div>
+                            </div>
+                            <div class="card mr-3">
+                                <img class="card-img-top rounded" src="img/work-3.jpg" alt="Work 3">
+                                <div class="card-body px-0">
+                                    <h5 class="card-title">Consulting for Google</h5>
+                                    <p class="card-text text-muted">Consulting</p>
+                                </div>
+                            </div>
+                            <div class="card mr-3">
+                                <img class="card-img-top rounded" src="img/work-4.jpg" alt="Work 4">
+                                <div class="card-body px-0">
+                                    <h5 class="card-title">Mobile App for LinkedIn</h5>
+                                    <p class="card-text text-muted">Mobile Apps</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-								</p>
+        <!--request a quote section-->
+        <section class="py-7 bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 mx-auto text-center">
+                        <h2 >我们可以一起作项目吗</h2>
+                        <div class="divider bg-primary mx-auto"></div>
+                        <p class="text-muted">
+                            我可以做合同工。让我们保持联系
+                        </p>
+                        <div class="mt-3">
+                            <form>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Your name">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="email"  class="form-control" placeholder="Your email address">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="tel"  class="form-control" placeholder="Phone number">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="url"  class="form-control" placeholder="Your website">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <textarea rows="5"  class="form-control" placeholder="Short summary of the work"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-center mt-3">
+                                    <button class="btn btn-primary">返回首页</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <!-- footer / contact -->
+      <footer class="py-6 bg-dark text-white" id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h5 class="text-white">John Doe</h5>
+                        <div class="divider divider-sm bg-white mt-3"></div>
+                        <p class="mt-4">
+                            I completed more than 1000 projects for 700+ clients in less than three 
+                            years. Would love to work on your project.
+                        </p>
+                        <ul class="list-inline social social-sm social-rounded mt-4">
+                            <li class="list-inline-item">
+                                <a href=""><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href=""><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href=""><i class="fa fa-google-plus"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href=""><i class="fa fa-linkedin"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href=""><i class="fa fa-dribbble"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href=""><i class="fa fa-skype"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 ml-auto">
+                        <h5 class="text-white">Contact Information</h5>
+                        <div class="divider divider-sm bg-white mt-3"></div>
+                        <ul class="list-unstyled mt-4">
+                            <li class=" mb-2">
+                                <span class="mr-2" data-feather="phone" width="20" height="20"></span>
+                                +44 123 456 7890
+                            </li>
+                            <li class=" mb-2">
+                                <span class="mr-2" data-feather="mail" width="20" height="20"></span>
+                                john@example.com
+                            </li>
+                            <li class=" mb-2">
+                                <span class="mr-2" data-feather="map-pin" width="20" height="20"></span>
+                                51 Guild Street, London, N18 9WA, UK
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <hr class="my-5"/>
+                <div class="row">
+                   
+                </div>
+            </div>
+        </footer> 
 
-					</section>
+        <!--scroll to top-->
+        <div class="scroll-top">
+            <i class="fa fa-angle-up" aria-hidden="true"></i>
+        </div>
 
-					<!-- section 2 -->
-					<section id="tm-section-2" class="tm-section tm-section-carousel">
-						<div>
-							<header class="mb-4">
-								<h2 class="tm-text-shadow" style="color:black;">Good life slowly meet 💗</h2>
-							</header>
-							<div class="tm-img-container">
-								<div class="tm-img-slider">
-									<a href="img/gallery-img-01.jpg" class="tm-slider-img"><img src="img/gallery-img-01-tn.jpg" alt="Image" class="img-fluid"></a>
-									<a href="img/gallery-img-02.jpg" class="tm-slider-img"><img src="img/gallery-img-02-tn.jpg" alt="Image" class="img-fluid"></a>
-									<a href="img/gallery-img-03.jpg" class="tm-slider-img"><img src="img/gallery-img-03-tn.jpg" alt="Image" class="img-fluid"></a>
-									<a href="img/gallery-img-04.jpg" class="tm-slider-img"><img src="img/gallery-img-04-tn.jpg" alt="Image" class="img-fluid"></a>
-									<a href="img/gallery-img-05.jpg" class="tm-slider-img"><img src="img/gallery-img-05-tn.jpg" alt="Image" class="img-fluid"></a>
-									<a href="img/gallery-img-06.jpg" class="tm-slider-img"><img src="img/gallery-img-06-tn.jpg" alt="Image" class="img-fluid"></a>
-								</div>
-							</div>
+        <!-- theme switcher (FOR DEMO ONLY - REMOVE FROM PRODUCTION) -->
+        <div class="switcher-wrap">
+            <div class="switcher-trigger">
+                <span class="fa fa-gear"></span>
+            </div>
+            <div class="color-switcher">
+                <h6>Color Switcher</h6>
+                <ul class="mt-3 clearfix">
+                    <li class="bg-black active" data-color="default" title="Default Black"></li>
+                    <li class="bg-green" data-color="green" title="Green"></li>
+                    <li class="bg-indigo" data-color="indigo" title="Indigo"></li>
+                    <li class="bg-orange" data-color="orange" title="Orange"></li>
+                    <li class="bg-red" data-color="red" title="Red"></li>
+                    <li class="bg-blue" data-color="blue" title="Blue"></li>
+                    <li class="bg-teal" data-color="teal" title="Teal"></li>
+                    <li class="bg-cyan" data-color="cyan" title="Cyan"></li>
+                    <li class="bg-purple" data-color="purple" title="Purple"></li>
+                    <li class="bg-pink" data-color="pink" title="Pink"></li>
+                </ul>
+                <p>These are just demo colors. You can <b>easily</b> create your own color scheme.</p>
+            </div>
+        </div>
 
-						</div>
-					</section>
-					<!-- section 3 -->
-					<section id="tm-section-3" class="tm-section">
-						<div class="row mb-4">
-							<header class="col-xl-12">
-								<h2 class="tm-text-shadow" style="color:black;">个人展示</h2>
-							</header>
-						</div>
-						<div class="row">
-							<div style="width:1000px;height:400px;border:3px solid white;">
-								<p>
-									<h4 class="tm-text-shadow">
-										<a href="05/轮播图.html">01 轮播图</a></h4>
-									</header>
-									<h4 class="tm-text-shadow">
-										<a href="05/首页动画.html">02 导航</a>
-									</h4>
-									<h4 class="tm-text-shadow">
-										<a href="02/index.html">03 商品之城</a>
-									</h4>
-									<h4 class="tm-text-shadow">
-										<a href="03/index.html">04 牛记生鲜</a>
-									</h4>
-									<h4 class="tm-text-shadow">
-										<a href="06/index.html">05 锄禾园林</a>
-									</h4>
-									<h4 class="tm-text-shadow">
-										<a href="08/index.html">06 皮皮虾</a>
-									</h4>
-								</p>
-							</div>
-
-						</div>
-					</section>
-					<div class="tlinks">Collect from <a href="http://www.cssmoban.com/">建站模板</a></div>
-
-
-				</div>
-				<footer class="footer-link">
-					<p class="tm-copyright-text">Copyright &copy; 2018 Constructive Co. Ltd. - Design: Tooplate / More Templates <a
-						 href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/"
-						 title="网页模板" target="_blank">网页模板</a></p>
-				</footer>
-			</div> <!-- row -->
-		</div>
-		<div id="preload-01"></div>
-		<div id="preload-02"></div>
-		<div id="preload-03"></div>
-		<div id="preload-04"></div>
-
-		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-		<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
-		<script type="text/javascript" src="js/jquery.backstretch.min.js"></script>
-		<script type="text/javascript" src="slick/slick.min.js"></script> <!-- Slick Carousel -->
-
-		<script>
-			var sidebarVisible = false;
-			var currentPageID = "#tm-section-1";
-
-			// Setup Carousel
-			function setupCarousel() {
-
-				// If current page isn't Carousel page, don't do anything.
-				if ($('#tm-section-2').css('display') == "none") {} else { // If current page is Carousel page, set up the Carousel.
-
-					var slider = $('.tm-img-slider');
-					var windowWidth = $(window).width();
-
-					if (slider.hasClass('slick-initialized')) {
-						slider.slick('destroy');
-					}
-
-					if (windowWidth < 640) {
-						slider.slick({
-							dots: true,
-							infinite: false,
-							slidesToShow: 1,
-							slidesToScroll: 1
-						});
-					} else if (windowWidth < 992) {
-						slider.slick({
-							dots: true,
-							infinite: false,
-							slidesToShow: 2,
-							slidesToScroll: 1
-						});
-					} else {
-						// Slick carousel
-						slider.slick({
-							dots: true,
-							infinite: false,
-							slidesToShow: 3,
-							slidesToScroll: 2
-						});
-					}
-
-					// Init Magnific Popup
-					$('.tm-img-slider').magnificPopup({
-						delegate: 'a', // child items selector, by clicking on it popup will open
-						type: 'image',
-						gallery: {
-							enabled: true
-						}
-						// other options
-					});
-				}
-			}
-
-			// Setup Nav
-			function setupNav() {
-				// Add Event Listener to each Nav item
-				$(".tm-main-nav a").click(function(e) {
-					e.preventDefault();
-
-					var currentNavItem = $(this);
-					changePage(currentNavItem);
-
-					setupCarousel();
-					setupFooter();
-
-					// Hide the nav on mobile
-					$("#tmSideBar").removeClass("show");
-				});
-			}
-
-			function changePage(currentNavItem) {
-				// Update Nav items
-				$(".tm-main-nav a").removeClass("active");
-				currentNavItem.addClass("active");
-
-				$(currentPageID).hide();
-
-				// Show current page
-				currentPageID = currentNavItem.data("page");
-				$(currentPageID).fadeIn(1000);
-
-				// Change background image
-				var bgImg = currentNavItem.data("bgImg");
-				$.backstretch("img/" + bgImg);
-			}
-
-			// Setup Nav Toggle Button
-			function setupNavToggle() {
-
-				$("#tmMainNavToggle").on("click", function() {
-					$(".sidebar").toggleClass("show");
-				});
-			}
-
-			// If there is enough room, stick the footer at the bottom of page content.
-			// If not, place it after the page content
-			function setupFooter() {
-
-				var padding = 100;
-				var footerPadding = 40;
-				var mainContent = $("section" + currentPageID);
-				var mainContentHeight = mainContent.outerHeight(true);
-				var footer = $(".footer-link");
-				var footerHeight = footer.outerHeight(true);
-				var totalPageHeight = mainContentHeight + footerHeight + footerPadding + padding;
-				var windowHeight = $(window).height();
-
-				if (totalPageHeight > windowHeight) {
-					$(".tm-content").css("margin-bottom", footerHeight + footerPadding + "px");
-					footer.css("bottom", footerHeight + "px");
-				} else {
-					$(".tm-content").css("margin-bottom", "0");
-					footer.css("bottom", "20px");
-				}
-			}
-
-			// Everything is loaded including images.
-			$(window).on("load", function() {
-
-				// Render the page on modern browser only.
-				if (renderPage) {
-					// Remove loader
-					$('body').addClass('loaded');
-
-					// Page transition
-					var allPages = $(".tm-section");
-
-					// Handle click of "Continue", which changes to next page
-					// The link contains data-nav-link attribute, which holds the nav item ID
-					// Nav item ID is then used to access and trigger click on the corresponding nav item
-					var linkToAnotherPage = $("a.tm-btn[data-nav-link]");
-
-					if (linkToAnotherPage != null) {
-
-						linkToAnotherPage.on("click", function() {
-							var navItemToHighlight = linkToAnotherPage.data("navLink");
-							$("a" + navItemToHighlight).click();
-						});
-					}
-
-					// Hide all pages
-					allPages.hide();
-
-					$("#tm-section-1").fadeIn();
-
-					// Set up background first page
-					var bgImg = $("#tmNavLink1").data("bgImg");
-
-					$.backstretch("img/" + bgImg, {
-						fade: 500
-					});
-
-					// Setup Carousel, Nav, and Nav Toggle
-					setupCarousel();
-					setupNav();
-					setupNavToggle();
-					setupFooter();
-
-					// Resize Carousel upon window resize
-					$(window).resize(function() {
-						setupCarousel();
-						setupFooter();
-					});
-				}
-			});
-		</script>
-	</body>
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.5.0/feather.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Typist/1.2/typist.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+        <script src="js/scripts.js"></script>
+    </body>
 </html>
