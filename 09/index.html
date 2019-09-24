@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>app</title>
+		<link rel="stylesheet" href="font/iconfont.css">
+		<link rel="stylesheet" href="_swiper@5.0.3@swiper/css/swiper.min.css">
+		<link rel="stylesheet" href="https://unpkg.com/mint-ui@1/lib/style.css">
+	</head>
+	<body>
+		<div id="app"></div>
+		<script src="https://unpkg.com/mint-ui@1/lib/index.js"></script>
+		<script type="text/javascript" src="https://api.map.baidu.com/api?v=3.0&ak=oHqy0dfUolNlu7YdaQbxhiADcAP7sVlO"></script>
+		
+		<script type="text/javascript" src="_swiper@5.0.3@swiper/js/swiper.min.js"></script>
+		<script src="font/iconfont.js"></script>
+		<script src="./dist/build.js"></script>
+		<script>
+			var swiper = new Swiper('.swiper-container', {
+				spaceBetween: 30,
+				effect: 'fade',
+				pagination: {
+					el: '.swiper-pagination',
+					clickable: true,
+					autoplay:true,
+				},
+				
+			});
+		</script>
+		
+	</body>
+</html>
